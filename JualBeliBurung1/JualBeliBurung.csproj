@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3BA3DDA8-662F-4521-9DB7-3F8D99C19E1C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JualBeliBurung</RootNamespace>
+    <AssemblyName>JualBeliBurung</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu.UI.WinForms.BunifuLabel">
+      <HintPath>E:\SOFTWARE\PEMROGRAMAN\Ms. Visual Studio 2015\Bunifu UI WinForms 1.5.5.3\Bunifu.UI.WinForms.BunifuLabel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>E:\SOFTWARE\PEMROGRAMAN\Ms. Visual Studio 2015\Bunifu UI WinForms 1.5.5.3\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.11.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BurungKenari.cs" />
+    <Compile Include="DeleteBurung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteBurung.Designer.cs">
+      <DependentUpon>DeleteBurung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeletePegawai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeletePegawai.Designer.cs">
+      <DependentUpon>DeletePegawai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delete_suplai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete_suplai.Designer.cs">
+      <DependentUpon>Delete_suplai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formUpdatePegawai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formUpdatePegawai.Designer.cs">
+      <DependentUpon>formUpdatePegawai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form_Suplai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form_Suplai.Designer.cs">
+      <DependentUpon>form_Suplai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdmin.Designer.cs">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditDataBurung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditDataBurung.Designer.cs">
+      <DependentUpon>FormEditDataBurung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTambahDataBurung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTambahDataBurung.Designer.cs">
+      <DependentUpon>FormTambahDataBurung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTambahDataPegawai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTambahDataPegawai.Designer.cs">
+      <DependentUpon>FormTambahDataPegawai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pegawai.cs" />
+    <Compile Include="Pembeli.cs" />
+    <Compile Include="Peternak.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Suplai.cs" />
+    <Compile Include="Transaksi.cs" />
+    <Compile Include="UpdateBurungcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateBurungcs.Designer.cs">
+      <DependentUpon>UpdateBurungcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="update_suplai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="update_suplai.Designer.cs">
+      <DependentUpon>update_suplai.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DeleteBurung.resx">
+      <DependentUpon>DeleteBurung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeletePegawai.resx">
+      <DependentUpon>DeletePegawai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete_suplai.resx">
+      <DependentUpon>Delete_suplai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formUpdatePegawai.resx">
+      <DependentUpon>formUpdatePegawai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form_Suplai.resx">
+      <DependentUpon>form_Suplai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdmin.resx">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditDataBurung.resx">
+      <DependentUpon>FormEditDataBurung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTambahDataBurung.resx">
+      <DependentUpon>FormTambahDataBurung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTambahDataPegawai.resx">
+      <DependentUpon>FormTambahDataPegawai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UpdateBurungcs.resx">
+      <DependentUpon>UpdateBurungcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="update_suplai.resx">
+      <DependentUpon>update_suplai.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

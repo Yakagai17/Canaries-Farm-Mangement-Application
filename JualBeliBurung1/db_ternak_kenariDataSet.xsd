@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="db_ternak_kenariDataSet" targetNamespace="http://tempuri.org/db_ternak_kenariDataSet.xsd" xmlns:mstns="http://tempuri.org/db_ternak_kenariDataSet.xsd" xmlns="http://tempuri.org/db_ternak_kenariDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="db_ternak_kenariConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="db_ternak_kenariConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.JualBeliBurung.Properties.Settings.GlobalReference.Default.db_ternak_kenariConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="burungTableAdapter" GeneratorDataComponentClassName="burungTableAdapter" Name="burung" UserDataComponentName="burungTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="db_ternak_kenariConnectionString (Settings)" DbObjectName="db_ternak_kenari.burung" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT kd_burung, nama_burung, jns_kl, warna_burung, silangan, tgl_lhr FROM burung</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="db_ternak_kenariDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="db_ternak_kenariDataSet" msprop:Generator_UserDSName="db_ternak_kenariDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="burung" msprop:Generator_TableClassName="burungDataTable" msprop:Generator_TableVarName="tableburung" msprop:Generator_TablePropName="burung" msprop:Generator_RowDeletingName="burungRowDeleting" msprop:Generator_RowChangingName="burungRowChanging" msprop:Generator_RowEvHandlerName="burungRowChangeEventHandler" msprop:Generator_RowDeletedName="burungRowDeleted" msprop:Generator_UserTableName="burung" msprop:Generator_RowChangedName="burungRowChanged" msprop:Generator_RowEvArgName="burungRowChangeEvent" msprop:Generator_RowClassName="burungRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
